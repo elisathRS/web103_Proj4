@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+#root {
+    --font-family: 'Montserrat', sans-serif; /* Cambiada a Montserrat */
+    --primary: rgb(108, 21, 21); /* Color primario más oscuro */
+    --primary-hover: rgb(7, 7, 7); /* Color más claro para hover */
+    --color: #f8f9fa; /* Color de texto más claro */
+    --h1-color: var(--color);
+    --h2-color: var(--color);
+    --h3-color: var(--color);
+    --card-background-color: rgba(255, 255, 255, 0.1); /* Fondo más ligero */
+    --card-sectionning-background-color: rgba(255, 255, 255, 0.2);
+    --form-element-active-border-color: var(--color);
+    --form-element-placeholder-color: gray;
+}
+
+#root h1 {
+    font-size: 3.5rem; /* Tamaño aumentado */
+    margin-bottom: 0px;
+    text-align: center; /* Centrado */
+    color: var(--primary); /* Color primario */
+}
+
+#root h2 {
+    font-size: 2.5rem; /* Tamaño ajustado */
+    margin-bottom: 10px; /* Margen inferior */
+    color: var(--primary);
+    text-align: center; /* Centrado */
+}
+
+#root h3 {
+    font-size: 1.8rem; /* Tamaño ajustado */
+    margin-bottom: 10px; /* Margen inferior */
+    color: var(--color);
+}
+
+#root p {
+    margin-bottom: 10px;
+    line-height: 1.6; /* Mejora en el espacio entre líneas */
+    color: var(--color);
+}
+
+/* Estilos para botones e inputs */
+#root [role=button], #root button, #root input[type=submit] {
+    font-family: var(--font-family);
+    font-weight: 400; /* Peso de fuente más fuerte */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    background-color: var(--primary);
+    color: var(--color);
+    border: 2px solid white; /* Sin borde para un look limpio */
+    padding: 10px 24px; /* Aumento en el padding */
+    margin: 10px; /* Espaciado vertical y horizontal */
+    transition: background-color 0.2, transform 0.2s; /* Transición suave */
+    width:max-content
+
+}
+
+
+#root [role=button]:hover, #root button:hover, #root input[type=submit]:hover {
+    background-color: var(--primary-hover); /* Color de fondo al pasar el mouse */
+    transform: scale(1.0); /* Efecto de zoom */
+}
+
+/* Estilos para la disposición principal */
+#root main {
+    display: flex;
+    flex-direction: column; /* Apilamiento vertical */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 20px; /* Espaciado */
+}
+
+/* Estilos para artículos */
+#root article {
+    text-align: left;
+    margin-bottom: 20px; /* Margen inferior */
+    background-color: var(--card-background-color); /* Fondo de artículos */
+    padding: 20px; /* Espaciado en artículos */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+}
+
+#root article header {
+    border-bottom: 1px solid var(--color); /* Borde inferior */
+    margin-bottom: 10px; /* Margen inferior */
+    padding-bottom: 10px; /* Espaciado inferior */
+}
+
+#root article footer {
+    border-top: 1px solid var(--color); /* Borde superior */
+    margin-top: 10px; /* Margen superior */
+    display: flex;
+    justify-content: space-between; /* Espaciado entre elementos del pie */
+    align-items: center; /* Centrado de elementos */
+}
+
+#root input[type=text] {
+    font-family: var(--font-family);
+    width: calc(70%); /* Ajuste para márgenes */
+    height: 50px; /* Mayor altura */
+    font-size: 1em; /* Tamaño ligeramente aumentado */
+    color: var(--color);
+    background-color: rgba(255, 253, 253, 0.991); /* Fondo más ligero para input */
+    border: 1px solid var(--color); /* Borde de color */
+    border-radius: 20px; /* Esquinas redondeadas */
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px; /* Margen inferior */
+    padding: 10px; /* Espaciado interno */
+    transition: border 0.3s; /* Transición suave para borde */
+}
+
+#root input[type=text]:focus {
+    border: 2px solid var(--form-element-active-border-color); /* Color activo del borde */
+}
+
+/* Estilos para tarjetas de coches */
+.car-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr; /* Ajuste en el tamaño de las columnas */
+    justify-items: center;
+    align-items: center;
+    gap: 20px; /* Espaciado entre elementos */
+    margin-bottom: 20px; /* Margen inferior en tarjetas */
+}

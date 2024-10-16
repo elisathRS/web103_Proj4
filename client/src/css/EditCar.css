@@ -1,0 +1,13 @@
+.edit-car {
+  max-width: 400px; /* Estilo existente */
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #000; 
+  color: #fff; 
+}
+
+
+.edit-car * {
+  background-color: transparent !important; /* Asegúrate de que el fondo sea transparente */
+  color: inherit; /* Asegúrate de que el color del texto sea el mismo que el del contenedor */
+}

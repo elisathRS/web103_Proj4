@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --delete-color: #ff0000;
+  --delete-hover: #cc0000;
+  --border-color: #ddd;
+  --text-color: #333;
+  --padding-large: 20px;
+  --padding-small: 10px;
+  --font-size-large: 28px;
+  --font-size-medium: 16px;
+  --font-size-small: 14px;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detailsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Full height */
+  background-color: rgba(255, 255, 255, 0.5); /* White background with transparency */
+  backdrop-filter: blur(5px); /* Optional: adds a blur effect behind the background */
+}
+
+.carFullDetails {
+  border: 1px solid var(--border-color);
+  padding: var(--padding-large);
+  box-shadow: var(--shadow);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+  width: 90%;
+  max-width: 600px; /* Limit width for larger screens */
+  text-align: left; /* Align text to the left */
+}
+
+.carFullDetails h2 {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--padding-small);
+  color: var(--primary-color);
+}
+
+.detailsContent {
+  padding: var(--padding-small);
+}
+
+.detailsContent p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.price {
+  font-weight: bold; /* Highlight price */
+  font-size: var(--font-size-large);
+}
+
+/* Button styles */
+.deleteCarButton,
+.editCarButton {
+  display: block; /* Make buttons block elements */
+  width: 100%; /* Full width */
+  padding: var(--padding-small);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: background-color 0.3s ease; /* Added transition for smooth effect */
+  color: #fff; /* White text for buttons */
+  min-height: 50px; /* Minimum height for buttons */
+  margin: 10px 0; /* Space between buttons */
+}
+
+.editCarButton {
+  background-color: var(--primary-color); /* Set button color to blue */
+}
+
+.deleteCarButton {
+  background-color: var(--delete-color);
+}
+
+.deleteCarButton:hover {
+  background-color: var(--delete-hover);
+  transform: scale(1.05);
+}
+
+.editCarButton:hover {
+  background-color: var(--primary-hover); /* Change color on hover */
+  transform: scale(1.05);
+}
+
+.loading, .error {
+  text-align: center; /* Center loading/error messages */
+  color: var(--text-color);
+  font-size: var(--font-size-small);
+  margin: 20px 0; /* Add spacing for loading/error messages */
+}

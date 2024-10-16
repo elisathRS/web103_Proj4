@@ -1,0 +1,68 @@
+.cars-holder {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para apilar artículos */
+  gap: 20px; /* Espaciado entre los artículos */
+  padding: 20px; /* Relleno alrededor del contenedor */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+article {
+  border: none; /* Sin borde para un aspecto limpio */
+  padding: 20px; /* Relleno dentro de cada artículo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  width: 100%; /* Hacer que los artículos ocupen todo el ancho */
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con opacidad para contraste */
+  color: #333; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados en los artículos */
+  transition: transform 0.2s; /* Efecto de transformación suave */
+}
+
+article:hover {
+  transform: translateY(-3px); /* Elevar al pasar el mouse */
+}
+
+article header {
+  font-size: 1.5rem; /* Aumentar el tamaño de fuente */
+  margin: 0 0 10px; /* Margen inferior para separación */
+  color: #fff; /* Color del texto en blanco para contraste */
+  background-color: #007bff; /* Color de fondo del encabezado, mejor que rojo */
+  padding: 10px; /* Espaciado interno para que el texto no esté pegado a los bordes */
+  border-radius: 5px; /* Bordes redondeados para el encabezado */
+}
+
+.car-card {
+  padding: 10px 0; /* Relleno dentro de la tarjeta del carro */
+}
+
+.car-price {
+  display: flex;
+  flex-direction: column; /* Apilar precio y botón verticalmente */
+  align-items: flex-start; /* Alinear elementos al inicio */
+  margin-top: 10px; /* Margen superior para separación */
+}
+
+.car-price p {
+  margin: 5px 0; /* Espacio entre el texto del precio */
+  font-size: 1.rem; /* Tamaño de fuente consistente */
+  color: #555; /* Color más suave para el precio */
+}
+
+.view-btn {
+  display: inline-block; /* Estilo de bloque en línea para el botón */
+  padding: 12px 20px; /* Espaciado en el botón */
+  background-color: #007bff; /* Color de fondo brillante para el botón */
+  color: #ffffff; /* Color de texto blanco */
+  text-decoration: none; /* Sin subrayado */
+  border: none; /* Sin borde para el botón */
+  cursor: pointer; /* Cursor tipo puntero para el botón */
+  border-radius: 25px; /* Bordes redondeados en el botón */
+  font-size: 16px; /* Tamaño de fuente para el botón */
+  font-weight: 600; /* Peso de fuente más fuerte */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.view-btn:hover {
+  background-color: #0056b3; /* Color más oscuro en hover */
+  transform: translateY(-2px); /* Efecto de elevación en hover */
+}
