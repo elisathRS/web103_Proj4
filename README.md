@@ -44,6 +44,9 @@ GIF created with screentogif
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
+## Database
+
+<img src='Screenshot_database.png' title='Database' width='' alt='Database' />
 ## Notes
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
