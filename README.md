@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
-<img src='video.webm' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='video.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 <!-- Replace this with whatever GIF tool you used! -->
@@ -44,6 +44,9 @@ GIF created with screentogif
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
+## Validate Combo
+
+<img src='validatecombo.png' title='validate' width='' alt='validate' />
 ## Database
 
 <img src='Screenshot_database.png' title='Database' width='' alt='Database' />
